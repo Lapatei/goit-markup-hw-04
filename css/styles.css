@@ -24,6 +24,8 @@ img {
   display: block;
 }
 
+/* Header */
+
 .header {
   border-bottom: 1px solid #e7e9fc;
 }
@@ -105,6 +107,8 @@ img {
   color: #404bbf;
 }
 
+/* Section 1 */
+
 .section-main {
   background-color: #2e2f42;
   padding: 188px 0;
@@ -155,6 +159,8 @@ img {
   background-color: #404bbf;
 }
 
+/* Section 2 */
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -192,6 +198,8 @@ img {
   letter-spacing: 0.02em;
   color: #434455;
 }
+
+/* Section 3 */
 
 .section-our-team {
   background-color: #f4f4fd;
@@ -244,6 +252,8 @@ img {
   color: #434455;
 }
 
+/* Section 4 */
+
 .portfolio-title {
   font-size: 36px;
   line-height: 1.11;
@@ -287,6 +297,8 @@ img {
   letter-spacing: 0.02em;
   color: #434455;
 }
+
+/* Footer */
 
 .footer-text {
   font-size: 16px;
