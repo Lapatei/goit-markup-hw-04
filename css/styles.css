@@ -112,6 +112,10 @@ img {
 .section-main {
   background-color: #2e2f42;
   padding: 188px 0;
+  background-image: url("../images/office-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .section-main .container {
@@ -183,6 +187,13 @@ img {
   width: calc((100% - 72px) / 4);
 }
 
+.about-us-icon {
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 64px;
+  height: 64px;
+}
+
 .advantages-name {
   font-size: 20px;
   line-height: 1.2;
@@ -250,6 +261,22 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
+  margin-bottom: 8px;
+}
+
+.our-team-icons {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.our-team-icon {
+  height: 16px;
+  width: 16px;
+  border: none;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  fill: #fff;
 }
 
 /* Section 4 */
