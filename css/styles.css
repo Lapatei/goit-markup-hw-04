@@ -63,6 +63,7 @@ img {
   font-weight: 500;
   padding: 24px 0;
   display: block;
+  position: relative;
 }
 
 .navigation:hover,
@@ -70,11 +71,16 @@ img {
   color: #404bbf;
 }
 
-.navigation:active {
-  border-bottom: 2px solid #404bbf;
+.navigation:active::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  background-color: #404bbf;
   border-radius: 2px;
-  padding-bottom: 44px;
   height: 4px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo {
@@ -118,9 +124,14 @@ img {
 /* Section 1 */
 
 .section-main {
-  background-color: rgba(46, 47, 66, 0.7);
+  background-color: #2e2f42;
   padding: 188px 0;
-  background-image: url("../images/office-img.jpg");
+  background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/office-img.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -403,6 +414,9 @@ img {
 .footer .container {
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 120px;
 }
 
 .footer-info .logo {
@@ -418,7 +432,6 @@ img {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding-right: 540px;
 }
 
 .social-links-list {
@@ -451,6 +464,7 @@ img {
 
 .social-links-item:hover {
   background-color: #31d0aa;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-links-title {
