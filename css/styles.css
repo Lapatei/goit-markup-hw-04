@@ -466,6 +466,7 @@ img {
 .social-links {
   display: flex;
   flex-direction: column;
+  margin-right: 80px;
 }
 
 .social-links-list {
